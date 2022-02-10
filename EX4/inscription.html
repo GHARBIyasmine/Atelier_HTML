@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inscription en licence</title>
+    </head>
+    <body>
+        <form action="./insat.html" method="post">
+        <h1 style="text-align: center;">Inscription en licence</h1>
+        <fieldset style=" text-align: center;" class="infoP">
+            <legend>Information Personels</legend>
+             <label for="name">Votre nom :</label>
+            <input type="text" name="name" id="name" value="Votre nom ?"> 
+            <br><br>
+            <label for="prenom">Votre prenom :</label>
+            <input type="text" name="prenom" id="prenom" value="Votre prenom ?">
+            <br><br>
+            <label for="age">Votre age :</label>
+            <input type="number" name="age" id="age" value="Votre age ?" pattern="[0-9]{2}">
+            <br><br>
+            Votre date de naissance: <input type="date" value="Votre date de naissance?">
+            <br><br>
+            <label for="address">Votre adresse :</label>
+            <textarea id="address" rows="10" cols="30">Votre adresse ?</textarea> 
+            <br><br>
+            Votre e-mail: <input type="e-mail" value="Votre e-mail?">
+            <br><br>
+            Votre URL : <input type="url" value="Votre URL ?">
+            <br><br>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" required>
+            <br><br>
+            <label for="password2">Retapez votre mot de passe</label>
+            <input type="password" name="password2" id="password2" required>
+        </fieldset>
+        <br><br>
+        <fieldset style="text-align: center;">
+            <legend>Gestion des groupes et des options</legend>
+            <label for="option">Votre groupe :</label>
+            <input type="radio" name="option" id="1" value="Groupe1">
+            <label for="1">Groupe 1 </label>
+            <input type="radio" name="option" id="2" value="Groupe2">
+            <label for="2">Groupe 2 </label>
+            <input type="radio" name="option" id="3" value="Groupe3">
+            <label for="3">Groupe 3 </label>
+            <br><br>
+            <label for="numero">Numero de carte d'etudiant</label>
+            <input type="text" id="numero" value="Numero de carte d'etudiant ?">
+            <br><br>
+            <label for="choix">Choissisez les option que vous desirez</label>
+            <input type="text" list="choix" >
+            <datalist id="choix">
+                <option name="choix" value="J2ee"></option>
+                <option name="choix" value="Android"></option>
+                <option name="choix" value=".Net"></option>
+                <option name="choix" value="HTML"></option>
+                <option name="choix" value="Flex"></option>
+            </datalist>
+            <br><br>
+         Verify by typing INSAT and 4 numbers: <input type="text" value="enter here" pattern="[I][N][S][A][T][0-9]{4}"> 
+        </fieldset>
+        <br>
+        <section style="text-align: center;">
+        <input type="submit" value="valider">
+        <input type="reset" value="reinitialiser">
+    </section>
+</form>
+    </body>
+</html>
